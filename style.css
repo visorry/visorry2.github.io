@@ -360,47 +360,47 @@ button:hover a {
   overflow-y: hidden;
 }
 
-.hero div {
+.home div {
   width: 100%;
 }
-.hero h1 {
+.home h1 {
   font-size: 1.75em;
   color: var(--titleColor);
   margin-block: 0.25em;
 }
 @media (min-width: 48em) {
-  .hero h1 {
+  .home h1 {
     font-size: 2.25em;
   }
 }
 @media (min-width: 62em) {
-  .hero h1 {
+  .home h1 {
     font-size: 2.625em;
   }
 }
-.hero h3 {
+.home h3 {
   font-size: 1em;
   color: var(--subtitleColor);
 }
 @media (min-width: 48em) {
-  .hero h3 {
+  .home h3 {
     font-size: 1.25em;
   }
 }
-.hero p {
+.home p {
   color: var(--textColor);
   margin-block: 1em;
 }
 @media (min-width: 48em) {
-  .hero p {
+  .home p {
     margin-bottom: 3em;
   }
 }
-.hero .mouse {
+.home .mouse {
   margin-top: 2em;
   display: inline-block;
 }
-.hero .mouse .scroll {
+.home .mouse .scroll {
   animation: scrollAnim 1s infinite alternate-reverse;
 }
 @keyframes scrollAnim {
