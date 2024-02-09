@@ -39,7 +39,7 @@
                         <li><a href="#skills" data-after="skills" class="nav-link skills">Skills</a></li>
                         <li><a href="#projects" data-after="projects" class="nav-link projects">Projects</a></li>
                         <li><a href="#contact" data-after="contact" class="nav-link contact">Contact</a></li>
-                        <li><a href="#" id="resume-link-1" class="nav-link resume">Resume</a></li>
+                        <li><a href="./pdf/VishnuR-NodeJSDeveloper-JdAu.pdf" id="resume-link-1" class="nav-link resume" onclick="window.open('./pdf/VishnuR-NodeJSDeveloper-JdAu.pdf', '_blank');"> Resume</a></li>
                     </ul>
                 </div>
             </nav>
@@ -68,9 +68,9 @@
                             </g>
                         </svg></a>
                         <div class="btn">
-                            <button class="btn-resume">
+                            <button class="btn-resume" onclick="window.open('./pdf/VishnuR-NodeJSDeveloper-JdAu.pdf', '_blank');">
                                 <a href="#" target="_blank">View Resume</a>
-                            </button>
+                            </button>                            
                         </div>
 
                 </div>
@@ -84,7 +84,7 @@
 
     <!-- About Section -->
     <section id="about" class="about section">
-        <div class="about container reveal active">
+        <div class="about container">
             <div class="col-left">
                 <h2 class="section-title">About Me.</h2>
                 <p id="user-detail-intro" class="section-paragraph">Hello! I am a developer that based in Kerala, India. I enjoy
@@ -108,73 +108,179 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills">
-        <div>
-            <!-- Skills cards -->
-            <!-- <div class="skills-card">
-                <img src="path/to/skill/image.jpg" alt="Skill Image" class="skills-card-img">
-                <p class="skills-card-name">Skill Name</p>
-            </div> -->
-            <!-- Repeat for other skills cards -->
+
+    <section id="skills" class="skills-section">
+        <div class="work-info">
+            <h1 class="section-title">Technologies i work with.</h2>
+            <br><br>
+        </div>
+        <div id="badges" class="skills-container">
+            <div class="skill-card">
+                <img src="img/javascript.svg" alt="JavaScript" class="skill-img">
+                <p class="skill-name">JavaScript</p>
+            </div>
+    
+            <div class="skill-card">
+                <img src="img/nodejs.svg" alt="Node.js" class="skill-img">
+                <p class="skill-name">Node.js</p>
+            </div>
+    
+            <div class="skill-card">
+                <img src="img/html5new.svg" alt="HTML5" class="skill-img">
+                <p class="skill-name">HTML5</p>
+            </div>
+    
+            <div class="skill-card">
+                <img src="img/git.svg" alt="Git" class="skill-img">
+                <p class="skill-name">Git</p>
+            </div>
+    
+            <div class="skill-card">
+                <img src="img/mongodb.svg" alt="MongoDB" class="skill-img">
+                <p class="skill-name">MongoDB</p>
+            </div>
+        
         </div>
     </section>
+    
 
     <!-- Projects Section -->
     <section id="projects">
         <div>
-            <!-- Project cards -->
-            <div class="project-card">
-                <div class="icon"><i class="far fa-folder fa-2x"></i>
-                <h2 class="project-title">Project Title</h2>
-                <p class="project-description">Project Description</p>
-                <p class="project-tech-stack">Tech Stack Used</p>
-                <a href="project-github-repo-link" class="project-github-link">GitHub Repository</a>
-                <a href="project-deployed-link" class="project-deployed-link">Deployed Link or Video Link</a>
+            <div class="work container">
+                <div class="work-info">
+                    <h2 class="section-title">Projects I've Built.</h2>
+                    <p class="section-paragraph">Here's a selection of my hobby creations for brushing up my skills. For
+                        more, kindly check out my
+                        <a href="https://github.com/visorry" class="no-select"><b>github repositories</b></a>.
+                    </p>
+                </div>
+                <div class="work-details">
+                    <div class="project-card">
+                        <div class="icon"><i class="far fa-folder fa-2x"></i></div>
+                        <h2 class="project-title">Traveller Symphony</h2>
+                        <div class="project-links">
+                            <a href="https://github.com/SourabhBurman/Traveller-Symphony" class="project-github-link" target="_blank"><i class="fab fa-github"></i> GitHub </a>
+                            <a href="https://traveller-symphony.netlify.app" class="project-deployed-link" target="_blank"><i class="fas fa-external-link-alt"></i> Deployed</a>
+                        </div>
+                        <p class="project-description">An intuitive travel platform with explore, plan, and book functionalities.</p>
+                        <p class="project-tech-stack">Tech Stack Used:</p>
+                        <ul class="tech-stack">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="icon"><i class="far fa-folder fa-2x"></i></div>
+                        <h2 class="project-title">BayLeaf</h2>
+                        <div class="project-links">
+                            <a href="https://github.com/visorry/bayleaf" class="project-github-link" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                            <a href="http://bayleaf.free.nf" class="project-deployed-link" target="_blank"><i class="fas fa-external-link-alt"></i> Deployed</a>
+                        </div>
+                        <p class="project-description">An E-Commerce website to purchase indoor plants.</p>
+                        <p class="project-tech-stack">Tech Stack Used:</p>
+                        <ul class="tech-stack">
+                            <li>PHP</li>
+                            <li>Bootstrap</li>
+                            <li>JavaScript</li>
+                            <li>SQL</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="icon"><i class="far fa-folder fa-2x"></i></div>
+                        <h2 class="project-title">Static Portfolio</h2>
+                        <div class="project-links">
+                            <a href="https://github.com/vaibhavsingh326/potent-voyage-8716" class="project-github-link" target="_blank"><i class="fab fa-github"></i> GitHub </a>
+                            <a href="https://spectacular-salmiakki-3bb190.netlify.app" class="project-deployed-link" target="_blank"><i class="fas fa-external-link-alt"></i> Deployed</a>
+                        </div>
+                        <p class="project-description">A simple showcase portfolio website built using HTML and CSS from a figma design.</p>
+                        <p class="project-tech-stack">Tech Stack Used:</p>
+                        <ul class="tech-stack">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                    </div>
+                    
+                </div>
             </div>
-            <!-- Repeat for other project cards -->
         </div>
     </section>
 
     <!-- Contact Section -->
+
     <section id="contact">
-        <div>
-            <p id="contact-github">GitHub Profile Link</p>
-            <p id="contact-linkedin">LinkedIn Profile Link</p>
-            <p id="contact-phone">Phone Number</p>
-            <p id="contact-email">Email Address</p>
-            <!-- Other content for the Contact section -->
+        <div class="contact container">
+            <div class="contact-info">
+                <h2 class="section-title">Get In Touch.</h2>
+                <p class="section-paragraph">Have an exciting project where we can work together? Or just want to
+                    say
+                    hi, do send me a message and let's chat.</p>
+            </div>
+            <form class="contact-forms" name="contact" method="POST" data-netlify="true">
+                <div class="input-box">
+                    <input type="text" name="name" autocomplete="off" spellcheck="false" required>
+                    <label>Name:</label>
+                </div>
+
+                <div class="input-box">
+                    <input type="text" name="email" autocomplete="off" spellcheck="false" required>
+                    <label>Email:</label>
+                </div>
+
+                <div class="input-box">
+                    <textarea name="message" id="" cols="30" rows="10" autocomplete="off" required></textarea>
+                    <label>Message:</label>
+                </div>
+
+                <div class="btn">
+                    <button type="submit" class="btn-submit">Send Message</button>
+                </div>
+            </form>
         </div>
+
+        <div class="footer">
+            <ul class="social-icons">
+                <!-- <li><a href="https://www.behance.net/" target="_blank"><i
+                            class="fab fa-behance fa-lg"></i></a> -->
+                <li><a href="https://github.com/visorry" target="_blank"><i class="fab fa-github fa-lg"></i></a>
+                </li>
+                <li><a href="https://www.linkedin.com/in/vishnuvisa/" target="_blank"><i
+                            class="fab fa-linkedin fa-lg"></i></a>
+                </li>
+            </ul>
+        </div>  
     </section>
+    <footer>
+        
+        <div class="footer">
+            <h1 style="color: #ccd6f6;">My GitHub Stats</h1>
 
-    <!-- Resume Section -->
-    <section id="resume">
-        <div>
-            <button id="resume-button-1"><a href="./pdf/VishnuR-NodeJSDeveloper-JdAu.pdf" target="_blank" download>View/Download Resume</a></button>
-        </div>
-    </section>
 
-    <!-- GitHub Calendar -->
-    <div class="react-activity-calendar">
-        <!-- Content for the GitHub Calendar -->
+            <!-- GitHub Activity Calendar -->
+            <div class="react-activity-calendar">
+                <img src="https://ghchart.rshah.org/4c71f2/visorry" alt="GitHub Activity Calendar">
+            </div>            
+
+<!-- GitHub Streak Stats -->
+<div id="github-streak-stats">
+    <img src="https://github-readme-streak-stats.herokuapp.com/?user=visorry&theme=dark" alt="GitHub Streak Stats">
+</div>
+
+<!-- GitHub Top Languages -->
+<div id="github-top-langs">
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=visorry&layout=compact&theme=dark" alt="GitHub Top Languages">
+</div>
+
+<!-- GitHub Stats Card -->
+<div id="github-stats-card">
+    <img src="https://github-readme-stats.vercel.app/api?username=visorry&show_icons=true&theme=dark" alt="GitHub Stats Card">
+</div>
+
     </div>
-
-    <!-- GitHub Statistics -->
-    <div id="github-streak-stats">
-        <!-- Content for GitHub Streak Stats -->
-    </div>
-
-    <div id="github-top-langs">
-        <!-- Content for GitHub Top Languages -->
-    </div>
-
-    <div id="github-stats-card">
-        <!-- Content for GitHub Stats Card -->
-    </div>
-
-    <!-- Footer and other sections remain unchanged -->
-
-    <!-- Your existing script tag -->
-
+    </footer>
     <script src="script.js"></script>
 </body>
 

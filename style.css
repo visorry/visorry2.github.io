@@ -578,7 +578,7 @@ button:hover a {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-.work .work-details .card {
+.work .work-details .project-card {
   padding: 2em 1.5em;
   border-radius: 5px;
   margin: 0.75em;
@@ -586,7 +586,7 @@ button:hover a {
   transform: translateY(0);
   transition: transform 0.3s ease;
 }
-.work .work-details .card .icon {
+.work .work-details .project-card .icon {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -595,45 +595,45 @@ button:hover a {
   color: var(--subtitleColor);
   margin-bottom: 1em;
 }
-.work .work-details .card .icon .link a {
+.work .work-details .project-card .icon .link a {
   color: var(--textColor);
 }
-.work .work-details .card .icon .link a:hover {
+.work .work-details .project-card .icon .link a:hover {
   color: var(--subtitleColor);
 }
-.work .work-details .card .icon .link a i {
+.work .work-details .project-card .icon .link a i {
   padding: 1em 0.5em;
   font-size: 1.25em;
 }
 @media (min-width: 48em) {
-  .work .work-details .card .icon {
+  .work .work-details .project-card .icon {
     font-size: 1.25em;
   }
 }
-.work .work-details .card h2 {
+.work .work-details .project-card h2 {
   font-size: 1.25em;
   color: var(--titleColor);
 }
-.work .work-details .card p {
+.work .work-details .project-card p {
   color: var(--textColor);
   font-size: 1em;
   line-height: 1.5;
   margin: 1em 0;
 }
-.work .work-details .card .tech-stack {
+.work .work-details .project-card .tech-stack {
   color: var(--detailsColor);
   font-size: 0.75em;
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
 }
-.work .work-details .card .tech-stack li {
+.work .work-details .project-card .tech-stack li {
   margin-right: 1em;
 }
-.work .work-details .card:hover {
+.work .work-details .project-card:hover {
   transform: translateY(-5px);
 }
-.work .work-details .card:hover h2 {
+.work .work-details .project-card:hover h2 {
   color: var(--subtitleColor);
 }
 
@@ -705,3 +705,30 @@ button:hover a {
 }
 
 /*# sourceMappingURL=/style.8b1cb3d3.css.map */
+
+.skills-section {
+  padding: 17%;
+  color: var(--textColor);
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.skill-card {
+  flex: 0 0 calc(20% - 20px);
+  margin: 10px;
+  text-align: center;
+}
+
+.skill-img {
+  width: 100%;
+  max-width: 100px; /* Adjust as needed */
+  height: auto;
+}
+
+.skill-name {
+  margin-top: 10px;
+}
