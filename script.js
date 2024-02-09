@@ -4,8 +4,6 @@ const hamburger = document.querySelector("#hamburger");
 const mobileMenu = document.querySelector(".mobile-menu");
 const menuLink = document.querySelectorAll(".mobile-menu li a");
 const header = document.querySelector(".header");
-const year = document.querySelector("#year");
-
 function hamburgerActivated() {
   hamburger.classList.toggle("active");
   mobileMenu.classList.toggle("active");
@@ -22,5 +20,3 @@ hamburger.addEventListener("click", () => {
   hamburgerActivated();
   body.classList.toggle("hide-scroll");
 });
-
-year.innerText = new Date().getFullYear();
