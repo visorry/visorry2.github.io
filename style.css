@@ -644,11 +644,13 @@ button:hover a {
   color: var(--titleColor);
 }
 .work .work-details .project-card p {
-  color: var(--textColor);
+  color: white;
   font-size: 1em;
   line-height: 1.5;
   margin: 1em 0;
+  text-shadow: 3px 5px 7px rgba(0, 0, 0, 1.0); /* Adjust the shadow values as needed */
 }
+
 .work .work-details .project-card .tech-stack {
   color: var(--detailsColor);
   font-size: 0.75em;
