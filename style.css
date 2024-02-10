@@ -578,14 +578,43 @@ button:hover a {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-.work .work-details .project-card {
+/* .work .work-details .project-card {
   padding: 2em 1.5em;
   border-radius: 5px;
   margin: 0.75em;
   background-color: rgba(49, 52, 53, 0.35);
   transform: translateY(0);
   transition: transform 0.3s ease;
+} */
+.work .work-details .project-card {
+  position: relative;
+  padding: 2em 1.5em;
+  border-radius: 5px;
+  margin: 0.75em;
+  background-color: rgba(49, 52, 53, 0.35);
+  transform: translateY(0);
+  transition: transform 0.3s ease;
+  overflow: hidden;
 }
+
+.work .work-details .project-card .project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: 5px;
+  opacity: 0; /* Initially hide the image */
+  transition: opacity 0.3s ease;
+}
+
+/* Show the image on hover */
+.work .work-details .project-card:hover .project-image {
+  opacity: 30%;
+}
+
 .work .work-details .project-card .icon {
   display: flex;
   justify-content: space-between;
@@ -636,6 +665,7 @@ button:hover a {
 .work .work-details .project-card:hover h2 {
   color: var(--subtitleColor);
 }
+
 
 .contact-forms {
   width: 100%;
