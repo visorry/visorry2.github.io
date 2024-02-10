@@ -717,13 +717,13 @@ button:hover a {
   justify-content: space-around;
 }
 
-.skill-card {
+.skills-card {
   flex: 0 0 calc(20% - 20px);
   margin: 10px;
   text-align: center;
 }
 
-.skill-img {
+.skills-card-img {
   width: 100%;
   max-width: 100px; /* Adjust as needed */
   height: auto;
