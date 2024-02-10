@@ -17,9 +17,12 @@
 </head>
 
 <body>
-
-    <!-- Navbar -->
-
+    <div id="loader">
+        <span class="dots"></span>
+        <span class="dots"></span>
+        <span class="dots"></span>
+    </div>
+<main id="wrapper">
   <nav id="nav-menu">
     <header id="header">
         <div class="header container">
@@ -58,10 +61,18 @@
                     <h1 id="user-detail-name">Vishnu R</h1>
                     <h3>I specialize in Node.js development and backend web technologies.</h3>
                     <a href="#about" class="no-select">
-                        <svg class="mouse stagger1" width="20" height="40" viewBox="0 0 40 77">
-                            <!-- SVG content -->
-                        </svg>
-                    </a>
+                        <svg class="mouse stagger1" width="20" height="40"
+                            viewBox="0 0 40 77">
+                            <g id="scroll" transform="translate(-253 -787)">
+                                <g id="Rectangle_12" data-name="Rectangle 12" transform="translate(253 787)" fill="none"
+                                    stroke="#5d9ce2" stroke-width="4">
+                                    <rect width="40" height="77" rx="20" stroke="none" />
+                                    <rect x="2" y="2" width="36" height="73" rx="18" fill="none" />
+                                </g>
+                                <circle class="scroll" id="Ellipse_1" data-name="Ellipse 1" cx="11" cy="11" r="11"
+                                    transform="translate(262 798)" fill="#5d9ce2" />
+                            </g>
+                        </svg></a>
                     <div class="btn">
                         <button class = "btn-resume" id="resume-button-3" ><a href="./pdf/resume.pdf" class="nav-link resume" id="resume-link-3" target="_blank" download>Download Resume</a></button>
                     </div>
@@ -77,7 +88,7 @@
 
     <!-- About Section -->
     <section id="about" class="about section">
-        <div class="about container">
+        <div class="about container reveal">
             <div class="col-left">
                 <h2 class="section-title">About Me.</h2>
                 <p id="user-detail-intro" class="section-paragraph">Welcome! I am a seasoned Back End Web Developer with expertise in Node.js, Express, and MongoDB. My passion lies in architecting robust and efficient web solutions. Committed to contributing to innovative projects.
@@ -109,7 +120,7 @@
             <h1 class="section-title">Technologies I Work With.</h1>
             <br><br>
         </div>
-        <div id="badges" class="skills-container">
+        <div id="badges" class="skills-container reveal">
             
             <div class="skills-card">
                 <img src="https://api.iconify.design/vscode-icons:file-type-js.svg" alt="JavaScript" class="skills-card-img">
@@ -149,7 +160,7 @@
     <!-- Projects Section -->
     <section id="projects">
         <div>
-            <div class="work container">
+            <div class="work container reveal">
                 <div class="work-info">
                     <h2 class="section-title">Projects I've Built.</h2>
                     <p class="section-paragraph">Here's a selection of my hobby creations for brushing up my skills. For
@@ -217,7 +228,7 @@
     <!-- Contact Section -->
 
     <section id="contact">
-        <div class="contact container">
+        <div class="contact container reveal">
             <div class="contact-info">
                 <h2 class="section-title">Get In Touch.</h2>
                 <p class="section-paragraph">Have an exciting project where we can work together? Or just want to
@@ -289,6 +300,7 @@
 
     </div>
     </footer>
+</main>
     <script src="script.js"></script>
 </body>
 
