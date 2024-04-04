@@ -21,7 +21,7 @@ function loadingAnim() {
 loadingAnim();
 
 function downloadResume() {
-  var resumeLink = "https://drive.google.com/file/d/1GybGbFp2lR06okw76FHst-sPckeChV3s/view?usp=drive_link";
+  var resumeLink = "https://drive.google.com/file/d/1oKex8UG8in6A1sLmQqbhjFKtLYIzgNON/view";
 
   window.open(resumeLink, '_blank');
 
@@ -65,7 +65,7 @@ hamburger.addEventListener("click", () => {
 });
 
 function openDriveLink(event) {
-  var driveLink = "https://drive.google.com/file/d/1GybGbFp2lR06okw76FHst-sPckeChV3s/view?usp=drive_link";
+  var driveLink = "https://drive.google.com/file/d/1oKex8UG8in6A1sLmQqbhjFKtLYIzgNON/view";
   
   window.open(driveLink, '_blank');
 
@@ -82,7 +82,7 @@ var resumeLink1 = document.getElementById('resume-link-1');
 var openButton = document.getElementById('resume-button-3');
 
     openButton.addEventListener('click', function() {
-        var driveLink = "https://drive.google.com/file/d/1GybGbFp2lR06okw76FHst-sPckeChV3s/view?usp=drive_link";
+        var driveLink = "https://drive.google.com/file/d/1oKex8UG8in6A1sLmQqbhjFKtLYIzgNON/view";
         window.open(driveLink, '_blank');
     });
 
